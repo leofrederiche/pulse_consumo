@@ -1,0 +1,100 @@
+*{
+    margin : 0;
+    padding: 0;
+    /*border: 1px solid rgba(0,0,0,0.5);*/
+    /*font-size: 1.05em;*/
+}
+
+body{
+    font-family: 'MicroSquare';
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+}
+
+a{
+    text-decoration: none;
+    color : black;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.left-container{
+    position: relative;
+    min-width: 400px;
+    max-width: 45vw;
+    height: 100vh;
+    background: #fefefe;
+    box-shadow: 0px 0px 25px black;
+    padding: 0px 30px;
+}
+
+nav{
+    width: 100%;
+    padding: 30px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.logo-name{
+    color: rgb(180,170,255);
+}
+
+.nav-left{
+    display: flex;
+    align-items: center;
+}
+
+.nav-right{
+    display: flex;
+    align-items: center;
+}
+
+.nav-right a{
+    margin: 0px 10px;
+}
+
+input{
+    margin: 20px 0;
+    font-size: 1.5em;
+}
+
+input:focus{
+    outline: none;
+}
+
+input[type="checkbox"]{
+    transform: scale(1.5);
+}
+
+.check-text{
+    font-size: 1.3em;
+    margin-left: 10px;
+}
+
+input[type="text"]{
+    font-size: 1.5em;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+
+input[type="submit"]{
+    padding: 10px 50px;
+    background: #2ecc71;
+    color: #ecf0f1;
+    border: 2px solid #2ecc71;
+}
+
+input[type="submit"]:hover{
+    border: 2px solid #27ae60;
+}
