@@ -3,9 +3,11 @@
     <head>
         <title>PulseConsumo</title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="assets/stylesheet/normalize.css" type="text/css" />
+        <link rel="stylesheet" href="assets/stylesheet/normalize.css?version=12" type="text/css" />
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     </head>
     <body>
+    <div id="app">
         <div class="left-container">
             <nav>
                 <div class="nav-left">
@@ -18,13 +20,16 @@
                 </div>
             </nav>
             
-            <h1>Informe a pulseira</h1>
+            <h1 >Informe a pulseira</h1>
             <br><br>
-            <form >
+            <form action="panel.php" method="get">
                 <input type="text" name="rfid" placeholder="Código GTIN da Pulseira"/>
-                <p><input type="checkbox" name="termos"> <b class="check-text">Aceito as Políticas de Privacidade.</b></p>
-                <input type="submit" value="Confirmar"/>
+                <p><input type="checkbox" name="termos" v-model="termos"> <b class="check-text">Aceito as Políticas de Privacidade.</b></p>
+                <input type="submit" value="Confirmar" v-if="termos" />
+                <input type="submit" value="Confirmar" v-if="!termos" v-on:click.prevent.stop="ValidaTermos(termos)" />
             </form>
         </div>
+    </div>    
+    <script src="vue.js"></script>
     </body>
 </html>

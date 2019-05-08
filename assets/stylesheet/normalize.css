@@ -98,3 +98,30 @@ input[type="submit"]{
 input[type="submit"]:hover{
     border: 2px solid #27ae60;
 }
+
+.movimento{
+    width: 80%;
+    background-color: #dcdde1;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.movimento h4{
+    margin-bottom: 15px;
+    font-size: 1.05em;
+}
+
+.movimento span{
+    position: relative;
+    float: right;
+    top: -15px;
+    font-size: 0.8em;
+}
+
+.mov-debito{
+    border-left: 8px solid #2ecc71;
+}
+
+.mov-credito{
+    border-left: 8px solid #e74c3c;
+}
